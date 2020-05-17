@@ -1,0 +1,98 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+}
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 200vw;
+	transform: rotate(90deg) translateY(-100vh);
+	transform-origin: top left;
+}
+.container {
+	width: 100vw;
+	height: 100vh;
+	margin: 0 auto;
+	padding: 0 1rem 0 1rem;
+	display: flex;
+	flex-direction: column;
+}
+.header {
+	display: flex;
+	padding-top: 1rem;
+	width: 100%;
+}
+.logo {
+	max-width: 100px;	
+}
+.samur-img {
+	position:fixed;
+	bottom: 0;
+	left: 80vw;
+	max-width: 300px;
+	z-index: 3;
+	transition: .3s;
+}
+.red-circle {
+	position: fixed;
+	z-index: 1;
+	left: 70vw;
+	bottom: -150px;
+	transition: .3s;
+}
+.main-text {
+	border-left: 10px solid #000;
+	margin: 2rem 0 0 7rem;
+	padding: 0 0 0 1rem;
+}
+.main-text__header {
+	font-weight: 600;
+	font-size: 90px;
+}
+.main-text__body {
+	font-size: 60px;
+}
+.reeds {
+	position: fixed;
+	bottom: -140px;
+	left: 10%;
+	z-index: 2;
+}
+.two {
+	position: relative;
+	z-index: 2;
+}
+.outher-wrapper {
+	width: 100vh;
+	height: 100vw;
+	transform: rotate(-90deg) translateX(-100vh);
+	transform-origin: top left;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: absolute;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+.first-page {
+	position: absolute;
+	overflow: hidden;
+	transition: .3s;
+}
+.left-text {
+	writing-mode: tb-rl;
+	font-weight: 500;
+	font-size: 100px;
+	position: fixed;
+	z-index: 3;
+	left: 0;
+	top: 40%;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+.main {
+	transition: .5s;
+}
